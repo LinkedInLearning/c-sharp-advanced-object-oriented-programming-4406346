@@ -1,5 +1,5 @@
-# C# Advanced Object-Oriented Programming
-This is the repository for the LinkedIn Learning course `C# Advanced Object-Oriented Programming`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Advanced C#: Object-Oriented Programming
+This is the repository for the LinkedIn Learning course `Advanced C#: Object-Oriented Programming`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ## Instructions
 This repository contains two folders for the contents of the course:
