@@ -11,11 +11,11 @@ Temperature[] temps = {
 
 
 // How many temperatures are room temp?
-var roomtemps = 0;
-foreach (Temperature t in temps) {
-    if (t.IsRoomTemp())
-        roomtemps++;
-}
+// var roomtemps = 0;
+// foreach (Temperature t in temps) {
+//     if (t.IsRoomTemp())
+//         roomtemps++;
+// }
 // Constants are accessed the same as static members
 // Console.WriteLine($"Room temp is between {Temperature.ROOM_TEMP_LOWER_C}C and {Temperature.ROOM_TEMP_UPPER_C}C");
 // Console.WriteLine($"{roomtemps} measurements are room temperature");
