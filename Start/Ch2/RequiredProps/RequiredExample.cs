@@ -7,12 +7,12 @@ public class Employee {
     // TODO: The SetsRequiredMembers attribute indicates that the constructor sets the 
     // required members, but the compiler doesn't actually check - it trusts you
     // Use this attribute with caution
-    public Employee(string fname, string lname, int id, string dept) {
-        ID = id;
-        FirstName = fname;
-        LastName = lname;
-        Department = dept;
-    }
+    // public Employee(string fname, string lname, int id, string dept) {
+    //     ID = id;
+    //     FirstName = fname;
+    //     LastName = lname;
+    //     Department = dept;
+    // }
 
     // TODO: The "required" keyword means that a value must be assigned during construction
     // Members that are required must be at least as visible as the containing type
