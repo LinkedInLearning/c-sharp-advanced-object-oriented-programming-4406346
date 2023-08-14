@@ -1,5 +1,5 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
-// Defining and instantiating classes
+// Working with properties and methods
 
 // Define a class using the "class" keyword
 class Rectangle {
