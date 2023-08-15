@@ -1,25 +1,25 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Using the readonly modifier for class members
 
-public class Wine {
+public class Book {
     // Declare some private fields
-    private int _year = 0;
-    private string _style = "";
-    private string _producer = "";
+    private readonly string _ISBN = "";
+    private string _title = "";
+    private string _author = "";
 
-    public Wine(int year, string producer, string style) {
-        _year = year;
-        _producer = producer;
-        _style = style;
+    public Book(string ISBN, string Title, string Author) {
+        _ISBN = ISBN;
+        _title = Title;
+        _author = Author;
     }
 
-    public void Update(int year, string producer, string style) {
-        _year = year; // causes a compile error
-        _producer = producer;
-        _style = style;
+    public void Update(string ISBN, string Title, string Author) {
+        // _ISBN = ISBN; // causes a compile error
+        _title = Title;
+        _author = Author;
     }
 
     public override string ToString() {
-        return $"{_year} {_producer} {_style}";
+        return $"{_ISBN}: {_title} by {_author}";
     }
 }

@@ -1,11 +1,11 @@
 ﻿// Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Using the readonly modifier for class members
 
-var wine1 = new Wine(2005, "Michel Redde", "Sancerre");
-var wine2 = new Wine(2018, "Hyde Estate", "Pinot Noir");
+var book1 = new Book("9780393096729", "War and Peace", "Leo Tolstoy");
+var book2 = new Book("9780552015004", "Catch-22", "Joseph Heller");
 
-Console.WriteLine($"{wine1}");
-Console.WriteLine($"{wine2}");
+Console.WriteLine($"{book1}");
+Console.WriteLine($"{book2}");
 
-wine1.Update(2006, "Silver Oak", "Cabernet Sauvignon");
-Console.WriteLine($"{wine1}");
+book1.Update("9780393096729", "War & Peace", "Tolstoy, Leo");
+Console.WriteLine($"{book1}");
