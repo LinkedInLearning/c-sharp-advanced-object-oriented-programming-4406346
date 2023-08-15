@@ -3,7 +3,7 @@
 
 public class Book {
     // Declare some private fields
-    private readonly string _ISBN = "";
+    private string _ISBN = "";
     private string _title = "";
     private string _author = "";
 
@@ -14,7 +14,7 @@ public class Book {
     }
 
     public void Update(string ISBN, string Title, string Author) {
-        // _ISBN = ISBN; // causes a compile error
+        _ISBN = ISBN;
         _title = Title;
         _author = Author;
     }
