@@ -7,7 +7,7 @@ public class A {
         Console.WriteLine("A");
     }
 
-    protected virtual void Func1() {
+    public virtual void Func1() {
         Console.WriteLine($"Func1 in class A");
     }
 }
@@ -17,7 +17,7 @@ public class B : A {
         Console.WriteLine("B");
     }
 
-    protected override sealed void Func1() {
+    public override void Func1() {
         Console.WriteLine("Func1 in class B");
     }
 }
@@ -26,17 +26,17 @@ public class B : A {
 public class C {
     public C() {}
 
-    protected virtual void Func2() {}
+    public virtual void Func2() {}
 }
 
 public class D : C {
     public D() {}
 
-    protected override void Func2() {}
+    public override void Func2() {}
 }
 
 public class E : D {
     public E() {}
 
-    protected override void Func2() {}
+    public override void Func2() {}
 }
