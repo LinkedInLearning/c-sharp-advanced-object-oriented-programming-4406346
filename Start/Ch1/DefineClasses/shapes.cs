@@ -12,7 +12,26 @@ public class Rectangle
     }
     // TODO: The constructor accepts parameters used to create the object
 
+    public int Width 
+    {
+        get {return width;}
+        set { 
+           
+            width = value;
+        }
+    }
 
+       public int Height 
+    {
+        get {return height;}
+        set { 
+            if (value < 0)
+                 throw new ArgumentOutOfRangeException("height", "must be  >= 0");
+            height = value;
+        }
+    }
+
+    public int BorderSize {get; set;} = 1;
     public Rectangle(int side)
     {
         width = height = side;

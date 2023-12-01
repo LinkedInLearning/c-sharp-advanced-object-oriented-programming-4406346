@@ -11,3 +11,9 @@ Console.WriteLine(rect.GetArea());
 rect.width = 20;
 rect.height = 30;
 Console.WriteLine(rect.GetArea());
+
+rect.Width = 5; 
+rect.Height = -6; 
+rect.BorderSize = 10;
+
+Console.WriteLine(rect.GetArea());
