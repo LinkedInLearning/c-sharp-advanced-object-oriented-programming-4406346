@@ -2,9 +2,22 @@
 // Solution to the Employee Class challenge
 
 public class Employee {
-    public Employee() {}
+    private static int _empCount = 0;
+    protected static int IDStart;
+    public Employee() {
+        Console.WriteLine("craeting");
+        Employee._empCount++;
+        ID = Employee.IDStart++;
+    }
 
-    public required int ID {get; init;}
+   static Employee()
+   {
+        IDStart = 1000;
+   }
+    
+   public static int EmployeeCount {get => _empCount;}
+   
+    public  int ID {get; init;}
     public required string Department {get; set;}
     public required string FullName {get; set;}
 
@@ -14,7 +27,8 @@ public class Employee {
 }
 
 public class HourlyEmployee : Employee {
-    public HourlyEmployee() {}
+    public HourlyEmployee() { 
+       }
 
     public decimal PayRate {get; set;}
 
@@ -25,7 +39,8 @@ public class HourlyEmployee : Employee {
 }
 
 public class SalariedEmployee : Employee {
-    public SalariedEmployee() {}
+    public SalariedEmployee() { 
+       }
 
     public decimal Salary {get; set;}
 

@@ -2,7 +2,7 @@
 // init-only modifier
 
 // create two objects using Initializers and a Constructor
-Employee emp1 = new Employee() {FirstName="John", LastName="Doe", ID=1, Department="Sales"};
+Employee emp1 = new Employee(){Some=20}  ;
 Employee emp2 = new Employee("Jane", "Deaux", 2, "Sales");
 
 

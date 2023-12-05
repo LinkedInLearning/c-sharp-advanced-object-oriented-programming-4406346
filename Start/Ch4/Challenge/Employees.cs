@@ -1,7 +1,7 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Solution to the Employee Class challenge
 
-public class Employee {
+public abstract class Employee {
     private static int _empCount = 0;
     protected static int IDStart;
     
@@ -10,6 +10,7 @@ public class Employee {
     }
 
     public Employee() {
+        Console.WriteLine("abstract class being called");
         Employee._empCount++;
         ID = Employee.IDStart++;
     }
@@ -20,12 +21,12 @@ public class Employee {
     public required string Department {get; set;}
     public required string FullName {get; set;}
 
-    public virtual void AdjustPay(decimal percentage) {}
+    public abstract void AdjustPay(decimal percentage) ;
 
     public override string ToString() => $"{ID}:{FullName}, {Department} ";
 }
 
-public class HourlyEmployee : Employee {
+public sealed class HourlyEmployee : Employee {
     public HourlyEmployee() {}
 
     public decimal PayRate {get; set;}
@@ -36,7 +37,7 @@ public class HourlyEmployee : Employee {
     }
 }
 
-public class SalariedEmployee : Employee {
+public sealed class SalariedEmployee : Employee {
     public SalariedEmployee() {}
 
     public decimal Salary {get; set;}
