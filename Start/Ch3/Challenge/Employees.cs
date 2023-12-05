@@ -17,7 +17,7 @@ public class Employee {
     
    public static int EmployeeCount {get => _empCount;}
    
-    public   int ID {get; init;}
+    public  int ID {get; init;}
     public required string Department {get; set;}
     public required string FullName {get; set;}
 
