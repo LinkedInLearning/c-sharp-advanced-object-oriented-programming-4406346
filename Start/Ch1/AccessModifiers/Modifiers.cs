@@ -16,7 +16,7 @@ public class MyClass {
     }
 
     // private members can only be accessed by this class
-    private int SomeValue = 1;
+    private int   = 1;
 
     // Prperties often expose internal data, so they are usually public
     public int Data {
@@ -31,5 +31,6 @@ public class DerivedClass : MyClass {
     public void Func3() {
         Console.WriteLine("This is Func3");
         // TODO: Func2 can be accessed because this is a subclass of MyClass
+        Func2();
     }
 }

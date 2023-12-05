@@ -18,6 +18,11 @@ public class Employee {
         get => _id;
         set => _id = value;
     }
+
+    public int Some
+    {
+        get;init;
+    }
     public string? Department {
         get; set;
     }
